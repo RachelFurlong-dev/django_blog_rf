@@ -86,6 +86,14 @@ DATABASES = {
     )
 }
 
+#CSRF protection stops malicious websites from submitting forms to your Django site.
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://django-blog-rf-6-2026-dee591a1b0f6.herokuapp.com",
+    "http://127.0.0.1:8000",
+    "http://localhost:8000",
+]
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
